@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "name": "Krishna WhatsApp Auto Message",
+  "version": "1.0",
+  "description": "Automatically sends messages on WhatsApp Web.",
+  "permissions": [
+    "activeTab",
+    "https://memojobs.com/*",  
+    "https://web.whatsapp.com/*" 
+  ],
+  "icons": {
+    "48": "logo.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://web.whatsapp.com/*"
+      ],
+      "js": [
+        "jquery.js",  
+        "content.js"
+      ]
+    }
+  ]
+}
